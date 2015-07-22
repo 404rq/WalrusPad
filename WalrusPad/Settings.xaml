@@ -1,0 +1,9 @@
+﻿<Window x:Class="WalrusPad.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Settings" Height="300" Width="300" WindowStartupLocation="CenterScreen" TextOptions.TextFormattingMode="Display">
+    <Grid>
+        <GroupBox Header="Local backup path" VerticalAlignment="Top" Height="90" Width="292"/>
+
+    </Grid>
+</Window>
