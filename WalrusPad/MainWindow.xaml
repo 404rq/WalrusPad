@@ -58,46 +58,46 @@
                 <avalonDock:LayoutRoot>
                     <avalonDock:LayoutPanel Orientation="Horizontal">
                         <avalonDock:LayoutPanel Orientation="Vertical" DockWidth="250">
-                            <avalonDock:LayoutAnchorablePaneGroup DockWidth="250">
+                            <avalonDock:LayoutAnchorablePaneGroup DockWidth="250" DockHeight="240">
                                 <avalonDock:LayoutAnchorablePane DockWidth="250">
-                                    <avalonDock:LayoutAnchorable>
+                                    <avalonDock:LayoutAnchorable Title="Server explorer">
                                         <Grid>
-                                            <TreeView x:Name="treeFolderBrowser" BorderBrush="{x:Null}" Margin="0,50,0,0" Foreground="#FF363636" ForceCursor="True" GotFocus="treeFolderBrowser_GotFocus"/>
                                             <ComboBox x:Name="cbx_conn" Margin="0" VerticalAlignment="Top" Foreground="#FF363636" BorderBrush="#FFEEEEEE" DropDownOpened="cbx_conn_DropDownOpened" Height="24" DropDownClosed="cbx_conn_DropDownClosed"/>
-                                            <Expander x:Name="ftp_browser_expander" Header="Server browser" Margin="0,25,0,0" VerticalAlignment="Top">
-                                                <Grid Background="White" Height="120">
-                                                    <TextBox x:Name="ftpBox" Height="22" Margin="0,23,0,0" VerticalAlignment="Top" TabIndex="1" SelectionBrush="#FF575757" BorderBrush="#FFEEEEEE" Foreground="#FF363636" ForceCursor="True"/>
-                                                    <Label Width="76" Height="23" Content="FTP Path:" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="4"/>
-                                                    <Button HorizontalAlignment="Right" x:Name="ConnectButton" Width="65" Content="Connect" FontSize="12" TabIndex="4" Click="ConnectClick" VerticalAlignment="Top" Height="22" AllowDrop="True" Foreground="#FF404040" BorderBrush="Gainsboro">
-                                                        <Button.Background>
-                                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                                                <GradientStop Color="White" Offset="0"/>
-                                                                <GradientStop Color="#FFE4E4E4" Offset="1"/>
-                                                                <GradientStop Color="#FFCFCFCF" Offset="0.5"/>
-                                                                <GradientStop Color="#FFEAEAEA" Offset="0.498"/>
-                                                            </LinearGradientBrush>
-                                                        </Button.Background>
-                                                    </Button>
-                                                    <Grid Height="70" Margin="0" VerticalAlignment="Bottom">
-                                                        <Grid.ColumnDefinitions>
-                                                            <ColumnDefinition Width="79*"/>
-                                                            <ColumnDefinition Width="80*"/>
-                                                        </Grid.ColumnDefinitions>
-                                                        <Label VerticalAlignment="Top" Height="23" Content="Username:" Padding="4"/>
-                                                        <TextBox Margin="0,23,0,0" x:Name="userNameBox" VerticalAlignment="Top" Height="22" TabIndex="2" TextWrapping="Wrap" BorderBrush="#FFEEEEEE" SelectionBrush="#FF575757" Foreground="#FF363636" ForceCursor="True"/>
-                                                        <PasswordBox x:Name="passwordBox" VerticalAlignment="Top" Height="22" TabIndex="3" BorderBrush="#FFEEEEEE" Margin="0,23,0,0" Grid.Column="1" SelectionBrush="#FF575757" Foreground="#FF363636" ForceCursor="True"/>
-                                                        <Label Padding="4" VerticalAlignment="Top" Height="23" Grid.Column="1" Content="Password:"/>
-                                                        <CheckBox x:Name="chbx_ssl" Content="Use SSL" HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top"/>
-                                                    </Grid>
-                                                </Grid>
-                                            </Expander>
+                                            <TextBox x:Name="ftpBox" Height="22" Margin="0,53,0,0" VerticalAlignment="Top" TabIndex="1" SelectionBrush="#FF575757" BorderBrush="#FFEEEEEE" Foreground="#FF363636" ForceCursor="True"/>
+                                            <Label Width="76" Height="23" Content="FTP Path:" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="4" Margin="0,30,0,0"/>
+                                            <Button HorizontalAlignment="Right" x:Name="ConnectButton" Width="65" Content="Connect" FontSize="12" TabIndex="4" Click="ConnectClick" VerticalAlignment="Top" Height="22" AllowDrop="True" Foreground="#FF404040" BorderBrush="Gainsboro" Margin="0,76,0,0">
+                                                <Button.Background>
+                                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                        <GradientStop Color="White" Offset="0"/>
+                                                        <GradientStop Color="#FFE4E4E4" Offset="1"/>
+                                                        <GradientStop Color="#FFCFCFCF" Offset="0.5"/>
+                                                        <GradientStop Color="#FFEAEAEA" Offset="0.498"/>
+                                                    </LinearGradientBrush>
+                                                </Button.Background>
+                                            </Button>
+                                            <Grid Height="70" Margin="0,100,0,0" VerticalAlignment="Top">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="79*"/>
+                                                    <ColumnDefinition Width="80*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Label VerticalAlignment="Top" Height="23" Content="Username:" Padding="4"/>
+                                                <TextBox Margin="0,23,0,0" x:Name="userNameBox" VerticalAlignment="Top" Height="22" TabIndex="2" TextWrapping="Wrap" BorderBrush="#FFEEEEEE" SelectionBrush="#FF575757" Foreground="#FF363636" ForceCursor="True"/>
+                                                <PasswordBox x:Name="passwordBox" VerticalAlignment="Top" Height="22" TabIndex="3" BorderBrush="#FFEEEEEE" Margin="0,23,0,0" Grid.Column="1" SelectionBrush="#FF575757" Foreground="#FF363636" ForceCursor="True"/>
+                                                <Label Padding="4" VerticalAlignment="Top" Height="23" Grid.Column="1" Content="Password:"/>
+                                                <CheckBox x:Name="chbx_ssl" Content="Use SSL" HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top"/>
+                                            </Grid>
+                                        </Grid>
+                                    </avalonDock:LayoutAnchorable>
+                                    <avalonDock:LayoutAnchorable Title="Folder tree" x:Name="folderTree">
+                                        <Grid>
+                                            <TreeView x:Name="treeFolderBrowser" BorderBrush="{x:Null}" Margin="0" Foreground="#FF363636" ForceCursor="True" GotFocus="treeFolderBrowser_GotFocus"/>
                                         </Grid>
                                     </avalonDock:LayoutAnchorable>
                                 </avalonDock:LayoutAnchorablePane>
                             </avalonDock:LayoutAnchorablePaneGroup>
                             <avalonDock:LayoutAnchorablePaneGroup>
                                 <avalonDock:LayoutAnchorablePane>
-                                    <avalonDock:LayoutAnchorable>
+                                    <avalonDock:LayoutAnchorable Title="File list">
                                         <Grid>
                                             <ListBox x:Name="fileList" Margin="0" BorderBrush="{x:Null}" MouseDoubleClick="fileList_MouseDoubleClick" Foreground="#FF363636" ForceCursor="True" SelectionMode="Extended" AllowDrop="True" DragEnter="fileList_DragEnter" Drop="fileList_Drop" PreviewMouseLeftButtonDown="fileList_PreviewMouseLeftButtonDown" MouseMove="fileList_MouseMove"/>
                                         </Grid>
