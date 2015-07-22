@@ -51,7 +51,6 @@ namespace WalrusPad
 		//Tools - Connect
 		private void MenuItem_Click_23(object sender, RoutedEventArgs e) {
 			if (!isConnectedToFTP) {
-				ftp_browser_expander.IsExpanded = true;
 				ftpBox.Focus();
 			}
 			else {
@@ -438,8 +437,7 @@ namespace WalrusPad
 				if (grid_find.Visibility == System.Windows.Visibility.Visible)
 					FindInDocument();
 				else if (passwordBox.IsKeyboardFocused || userNameBox.IsKeyboardFocused || ftpBox.IsFocused) {
-					//Collapse and connect to FTP server
-					ftp_browser_expander.IsExpanded = false;
+					//Connect to FTP server
 					SetupFTP();
 				}
 			}
@@ -1253,6 +1251,7 @@ namespace WalrusPad
 				namePathDictionary.Clear();
 				dockPanelContent.Clear();
 				fileList.Items.Clear();
+                folderTree.IsActive = true;
 
 				startingPath = ftpBox.Text;
 				userName = userNameBox.Text;
@@ -1537,7 +1536,6 @@ namespace WalrusPad
 		private void ConnectClick(object sender, RoutedEventArgs e) {
 			//Collapse and connect to FTP server
 			if (!isConnectedToFTP) {
-				ftp_browser_expander.IsExpanded = false;
 				SetupFTP();
 			}
 			else {
@@ -1559,7 +1557,7 @@ namespace WalrusPad
 		}
 		//Hide expandable panel when loosing focus
 		private void treeFolderBrowser_GotFocus(object sender, RoutedEventArgs e) {
-			ftp_browser_expander.IsExpanded = false;
+            //Do Nothing
 		}
 		private string[] DownloadFTPFiles(bool loadToEditor = true) {
 			try {
@@ -1712,7 +1710,6 @@ namespace WalrusPad
 				r.Close();
 
 				//Connect to server
-				ftp_browser_expander.IsExpanded = false;
 				SetupFTP();
 			}
 			catch (Exception ex) {
