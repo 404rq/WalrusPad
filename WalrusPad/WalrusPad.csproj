@@ -70,31 +70,31 @@
   <ItemGroup>
     <Reference Include="acorp, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\acorp.dll</HintPath>
+      <HintPath>..\..\..\..\OwnCloud\documents\visual-studio-2013\WalrusPad\WalrusPad\bin\Debug\acorp.dll</HintPath>
     </Reference>
     <Reference Include="AvalonDock, Version=2.0.1741.0, Culture=neutral, PublicKeyToken=96637cf0d3eefdfb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\AvalonDock.dll</HintPath>
+      <HintPath>..\..\..\..\OwnCloud\documents\visual-studio-2013\WalrusPad\WalrusPad\bin\Debug\AvalonDock.dll</HintPath>
     </Reference>
     <Reference Include="AvalonDock.Themes.Aero, Version=2.0.1741.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\AvalonDock.Themes.Aero.dll</HintPath>
+      <HintPath>..\..\..\..\OwnCloud\documents\visual-studio-2013\WalrusPad\WalrusPad\bin\Debug\AvalonDock.Themes.Aero.dll</HintPath>
     </Reference>
     <Reference Include="AvalonDock.Themes.Expression, Version=2.0.1741.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\AvalonDock.Themes.Expression.dll</HintPath>
+      <HintPath>..\..\..\..\OwnCloud\documents\visual-studio-2013\WalrusPad\WalrusPad\bin\Debug\AvalonDock.Themes.Expression.dll</HintPath>
     </Reference>
     <Reference Include="AvalonDock.Themes.Metro, Version=2.0.1741.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\AvalonDock.Themes.Metro.dll</HintPath>
+      <HintPath>..\..\..\..\OwnCloud\documents\visual-studio-2013\WalrusPad\WalrusPad\bin\Debug\AvalonDock.Themes.Metro.dll</HintPath>
     </Reference>
     <Reference Include="AvalonDock.Themes.VS2010, Version=2.0.1741.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\AvalonDock.Themes.VS2010.dll</HintPath>
+      <HintPath>..\..\..\..\OwnCloud\documents\visual-studio-2013\WalrusPad\WalrusPad\bin\Debug\AvalonDock.Themes.VS2010.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.AvalonEdit, Version=4.1.0.7916, Culture=neutral, PublicKeyToken=9cc39be672370310, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\ICSharpCode.AvalonEdit.dll</HintPath>
+      <HintPath>..\..\..\..\OwnCloud\documents\visual-studio-2013\WalrusPad\WalrusPad\bin\Debug\ICSharpCode.AvalonEdit.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
